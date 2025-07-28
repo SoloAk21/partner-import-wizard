@@ -1,1 +1,1 @@
-# Empty file for wizard package
+from . import partner_import_wizard

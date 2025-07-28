@@ -5,7 +5,10 @@
     'category': 'Tools',
     'author': 'Solo Ak',
     'depends': ['base', 'contacts'],
-    'data': [],
+    'data': [
+        'views/partner_import_wizard_view.xml',
+        'security/ir.model.access.csv',
+    ],
     'installable': True,
     'application': False,
 }

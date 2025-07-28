@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_partner_import_wizard_form" model="ir.ui.view">
+        <field name="name">partner.import.wizard.form</field>
+        <field name="model">partner.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import Partners">
+                <group>
+                    <field name="file" filename="file_name"/>
+                    <field name="file_name" invisible="1"/>
+                    <field name="import_mode"/>
+                </group>
+                <footer>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_partner_import_wizard" model="ir.actions.act_window">
+        <field name="name">Import Partners</field>
+        <field name="res_model">partner.import.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_partner_import_wizard" 
+              name="Import Partners" 
+              parent="contacts.menu_contacts" 
+              action="action_partner_import_wizard"/>
+</odoo>

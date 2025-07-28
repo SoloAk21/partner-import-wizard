@@ -1,1 +1,1 @@
-# Empty file for module initialization
+from . import wizard
