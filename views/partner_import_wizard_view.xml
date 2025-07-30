@@ -8,9 +8,12 @@
                 <group>
                     <field name="file" filename="file_name"/>
                     <field name="file_name" invisible="1"/>
+                    <field name="file_type" invisible="1"/>
                     <field name="import_mode"/>
+                    <label for="file" string="Supported formats: CSV, Excel (XLSX)"/>
                 </group>
                 <footer>
+                    <button name="process_file" string="Process File" type="object" class="btn-primary"/>
                     <button string="Cancel" class="btn-secondary" special="cancel"/>
                 </footer>
             </form>

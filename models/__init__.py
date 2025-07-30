@@ -1,1 +1,1 @@
-# Empty file for models package
+# Empty file for module initialization
